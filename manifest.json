@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "OpenAI Chat Enhancer",
+    "version": "1.0",
+    "description": "Make answers and code blocks wider on chat.openai.com",
+    "permissions": ["activeTab"],
+ 
+    "content_scripts": [
+        {
+            "matches": ["https://chat.openai.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
